@@ -15,9 +15,9 @@
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=4.3" />
-	<link rel="stylesheet" href="css/media.css?ver=4.3" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.0" />
+	<link rel="stylesheet" href="css/main.css?ver=5.2" />
+	<link rel="stylesheet" href="css/media.css?ver=5.0" />
 </head>
 <body>
 
@@ -102,21 +102,14 @@
 						<span>Работа по договору</span>
 					</div>
 				</div>
-				<h1 class="billbord__title"><strong>Снабжение агробизнеса в Крыму:</strong> опт и розница с поставкой по графику</h1>
-				<ul class="billbord__list">
-					<li>
-						<img src="img/icon-check-hero.svg" alt="" class="billbord__list-icon">
-						<span>Официальные бренды, договор и безнал, доставка по Крыму</span>
-					</li>
-					<li>
-						<img src="img/icon-check-hero.svg" alt="" class="billbord__list-icon">
-						<span>Быстрый старт работы с персональным менеджером</span>
-					</li>
-					<li>
-						<img src="img/icon-check-hero.svg" alt="" class="billbord__list-icon">
-						<span>Семена, удобрения, капельный полив и СЗР</span>
-					</li>
-				</ul>
+				<div class="billbord__main">
+					<h1 class="billbord__title"><strong>Снабжение агробизнеса в Крыму:</strong><br>опт и розница с поставкой по графику</h1>
+					<ul class="billbord__list">
+						<li>Официальные бренды, договор и безнал, доставка по Крыму</li>
+						<li>Быстрый старт работы с персональным менеджером</li>
+						<li>Семена, удобрения, капельный полив и СЗР</li>
+					</ul>
+				</div>
 				<div class="billbord__bottom">
 					<a href="#wholesale" class="btn-main">Стать оптовым клиентом <img src="img/icon-arrow.svg" alt=""></a>
 					<div class="billbord__promo">
@@ -135,7 +128,7 @@
 				<div class="row advantages__row">
 					<div class="col-12 col-md-6 advantages__col-square">
 						<div class="item-advantage item-advantage--cream">
-							<img src="img/icon-delivery.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-delivery.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Бесплатная доставка</div>
 								<p class="item-advantage__text">По Крыму при согласованных условиях поставки</p>
@@ -144,7 +137,7 @@
 					</div>
 					<div class="col-12 col-md-6 advantages__col-square">
 						<div class="item-advantage item-advantage--green">
-							<img src="img/icon-farm.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-seeds.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Официальные бренды</div>
 								<p class="item-advantage__text">Оригинальная продукция и подтвержденные партнерства</p>
@@ -153,7 +146,7 @@
 					</div>
 					<div class="col-12 col-md-6 advantages__col-square">
 						<div class="item-advantage item-advantage--cream">
-							<img src="img/icon-farm.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-cereal.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Подбор под задачу</div>
 								<p class="item-advantage__text">Помогаем подобрать решения под специфику хозяйства</p>
@@ -167,7 +160,7 @@
 					</div>
 					<div class="col-12 col-md-6 advantages__col-square">
 						<div class="item-advantage item-advantage--green">
-							<img src="img/icon-delivery.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-trolley.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Стабильные отгрузки</div>
 								<p class="item-advantage__text">Планируем поставки и соблюдаем график доставки</p>
@@ -181,7 +174,7 @@
 					</div>
 					<div class="col-12 col-md-6 advantages__col-square">
 						<div class="item-advantage item-advantage--green">
-							<img src="img/icon-farm.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-boxes.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Опт и розница</div>
 								<p class="item-advantage__text">Одна площадка для разных типов клиентов</p>
@@ -190,7 +183,7 @@
 					</div>
 					<div class="col-12 col-md-6 advantages__col-wide">
 						<div class="item-advantage item-advantage--cream item-advantage--wide">
-							<img src="img/icon-farm.svg" alt="" class="item-advantage__icon">
+							<img src="img/icon-advantage-signature.svg" alt="" class="item-advantage__icon">
 							<div>
 								<div class="item-advantage__title">Гибкая оплата</div>
 								<p class="item-advantage__text">Работаем по договору и безналичному расчету</p>
@@ -470,26 +463,26 @@
 						<h2 class="title-section">Доставка и оплата</h2>
 						<p class="descr-section">Доставка по Крыму, плановые отгрузки вт-чт, безналичный расчет и гибкие условия оплаты.</p>
 						<div class="row delivery__list">
-							<div class="col-md-6 delivery__col">
-								<div class="delivery-benefit">
+							
+								<div class="delivery-benefit col-md-6 delivery__col">
 									<span class="delivery-benefit__icon"><img src="img/icon-wholesale-check.svg?ver=3.1" alt=""></span>
 									<span class="delivery-benefit__text">Отгрузки по графику</span>
 								</div>
-								<div class="delivery-benefit">
+								<div class="delivery-benefit col-md-6 delivery__col">
 									<span class="delivery-benefit__icon"><img src="img/icon-wholesale-check.svg?ver=3.1" alt=""></span>
 									<span class="delivery-benefit__text">Индивидуальные условия</span>
 								</div>
-							</div>
-							<div class="col-md-6 delivery__col">
-								<div class="delivery-benefit">
+							
+							
+								<div class="delivery-benefit col-md-6 delivery__col">
 									<span class="delivery-benefit__icon"><img src="img/icon-wholesale-check.svg?ver=3.1" alt=""></span>
 									<span class="delivery-benefit__text">Закрывающие документы</span>
 								</div>
-								<div class="delivery-benefit">
+								<div class="delivery-benefit col-md-6 delivery__col">
 									<span class="delivery-benefit__icon"><img src="img/icon-wholesale-check.svg?ver=3.1" alt=""></span>
 									<span class="delivery-benefit__text">Быстрая связь с менеджером</span>
 								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -541,6 +534,16 @@
 							</div>
 							<div class="item-question__answer">Да, работаем по договору с полным пакетом закрывающих документов.</div>
 						</div>
+						<div class="item-question">
+							<div class="item-question__head">
+								<div class="item-question__title">Работаете ли по безналичному расчету?</div>
+								<div class="item-question__toggle">
+									<img src="img/icon-faq-plus.svg" alt="" class="icon-plus">
+									<img src="img/icon-faq-minus.svg" alt="" class="icon-minus">
+								</div>
+							</div>
+							<div class="item-question__answer">Да, работаем по договору с полным пакетом закрывающих документов.</div>
+						</div>
 					</div>
 					<div class="col-lg col-md-12 partners faq-partners__col-partners">
 						<h2 class="title-section">Партнеры</h2>
@@ -558,7 +561,7 @@
 		<section class="contacts" id="contacts">
 			<div class="container-fluid container-main">
 				<div class="row contacts__inner align-items-start">
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-5 col-md-12">
 						<div class="contacts__info">
 							<div class="contacts__content">
 								<h2 class="title-section">Контакты</h2>
@@ -578,7 +581,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-8 col-md-12">
+					<div class="col-lg-7 col-md-12">
 						<div class="contacts__map">
 							<img src="img/map.png?ver=3.1" alt="Карта — АГРО АС, с. Садовое">
 						</div>
@@ -726,6 +729,6 @@
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="js/common.js?ver=3.5"></script>
+	<script src="js/common.js?ver=3.6"></script>
 </body>
 </html>

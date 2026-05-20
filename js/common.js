@@ -80,13 +80,15 @@ $(document).ready(function () {
 					{
 						breakpoint: 992,
 						settings: {
-							slidesToShow: 2
+							slidesToShow: 2,
+							dots: true
 						}
 					},
 					{
 						breakpoint: 576,
 						settings: {
-							slidesToShow: 1
+							slidesToShow: 1,
+							dots: true
 						}
 					}
 				]
@@ -103,25 +105,45 @@ $(document).ready(function () {
 
 	$('.fancybox').fancybox({
 		autoFocus: false,
-		backFocus: false
+		backFocus: false,
+		afterShow: function (instance, current) {
+			if (current && current.$content) {
+				current.$content.find('.input-phone').mask('+7 (999) 999-99-99');
+			}
+		}
 	});
 
 	$('.input-phone').mask('+7 (999) 999-99-99');
 
-	var headerH = $('.header').outerHeight();
+	function getAnchorOffset() {
+		var gap = 16;
+		var $header = $('.header');
+		if ($header.hasClass('fixed')) {
+			return $header.outerHeight() + gap;
+		}
+		var $row = $header.find('.header__row');
+		if ($row.length) {
+			return $row.outerHeight() + 30 + gap;
+		}
+		return $header.outerHeight() + gap;
+	}
 
 	$('a[href^="#"]').on('click', function (event) {
 		var href = $(this).attr('href');
-		if (href === '#' || href.indexOf('modal') !== -1 || $(this).hasClass('fancybox')) {
+		if (!href || href === '#' || href.length < 2) {
+			return;
+		}
+		if ($(this).hasClass('fancybox') || $(this).closest('.tabs-page').length) {
 			return;
 		}
 		var $target = $(href);
-		if ($target.length) {
-			event.preventDefault();
-			$('html, body').animate({
-				scrollTop: $target.offset().top - headerH
-			}, 500);
+		if (!$target.length) {
+			return;
 		}
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $target.offset().top - getAnchorOffset()
+		}, 500);
 	});
 
 });

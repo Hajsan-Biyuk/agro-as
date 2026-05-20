@@ -227,6 +227,26 @@ $(document).ready(function () {
 		$input.val(value + 1);
 	});
 
+	$('.btn-main_filter').on('click', function (e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.catalog-sidebar').slideToggle(200);
+	});
+
+	$('.catalog-sidebar__head').on('click', function () {
+		var $item = $(this).closest('.catalog-sidebar__item');
+
+		if ($item.hasClass('catalog-sidebar__item--open')) {
+			$item.removeClass('catalog-sidebar__item--open');
+			$item.find('.catalog-sidebar__body').slideUp(200);
+		} else {
+			$('.catalog-sidebar__item').removeClass('catalog-sidebar__item--open');
+			$('.catalog-sidebar__body').slideUp(200);
+			$item.addClass('catalog-sidebar__item--open');
+			$item.find('.catalog-sidebar__body').slideDown(200);
+		}
+	});
+
 	$('a[href^="#"]').on('click', function (event) {
 		var href = $(this).attr('href');
 		if (!href || href === '#' || href.length < 2) {

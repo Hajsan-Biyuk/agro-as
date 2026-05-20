@@ -42,8 +42,8 @@
 @media (max-width: 1800px) {
 	.container-fluid.container-main,
 	.container-main {
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	.contacts__actions {
 		flex-wrap: wrap;
@@ -67,7 +67,7 @@
 
 @media (max-width: 1600px) {
 	.header__nav-col {
-		padding-left: 72px;
+		padding-left: 30px;
 	}
 
 	.header__email {
@@ -108,6 +108,9 @@
 	.btn-telegram {
 		width: 42px;
 		height: 42px;
+	}
+	.products__slider.slick-initialized .products__slide {
+		margin: 0 10px;
 	}
 
 }
@@ -565,8 +568,9 @@
 	.modal-wrap .item-form input {
 		font-size: 16px;
 	}
-	.products__slider.slick-initialized .products__slide {
-		margin: 0 10px;
+	
+	.contacts__map {
+		margin-top: 30px;
 	}
 	
 }
@@ -741,6 +745,25 @@
 	}
 }
 
+@media (max-width: 1479px) and (min-width: 1200px) {
+	.product-page__buy-top .product-page__price-col {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0;
+		margin-bottom: 16px;
+	}
+
+	.product-page__buy-top .product-page__qty-col {
+		flex: 0 0 100%;
+		max-width: 100%;
+		overflow: visible;
+	}
+
+	.product-page__qty {
+		width: 100%;
+	}
+}
+
 @media (max-width: 1399px) {
 	.product-page__gallery {
 		max-width: none;
@@ -791,7 +814,89 @@
 	}
 }
 
+@media (max-width: 1199px) {
+	.catalog-page__sidebar-col {
+		padding-right: 15px;
+	}
+
+	.catalog-sidebar {
+		max-width: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.catalog-page__sidebar-col {
+		margin-bottom: 0;
+	}
+
+	.btn-main_filter {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.btn-main_filter.active .fal {
+		transform: rotate(180deg);
+	}
+
+	.catalog-sidebar {
+		display: none;
+		padding-bottom: 20px;
+	}
+
+	.catalog-page__title {
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+
+	.catalog-page__sort {
+		margin-bottom: 20px;
+	}
+
+	.catalog-page__pager-nums .page-numbers {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	.btn-main_filter {
+		display: none !important;
+	}
+
+	.catalog-sidebar {
+		display: block !important;
+	}
+}
+
 @media (max-width: 576px) {
+	.catalog-page__pager {
+		min-height: 48px;
+		margin-top: 20px;
+	}
+
+	.catalog-page__pager-arrow {
+		width: 48px;
+		height: 48px;
+	}
+
+	.catalog-page__pager-nums .page-numbers {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 16px;
+	}
+
+	.catalog-sidebar__name {
+		font-size: 18px;
+	}
+
+	.catalog-sidebar__sub a {
+		font-size: 16px;
+	}
+
 	.breadcrumbs {
 		margin-bottom: 16px;
 		font-size: 13px;

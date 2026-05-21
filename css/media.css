@@ -870,6 +870,13 @@
 	.catalog-sidebar {
 		display: block !important;
 	}
+
+	.catalog-page__sidebar-col {
+		position: sticky;
+		top: 24px;
+		align-self: flex-start;
+		z-index: 2;
+	}
 }
 
 @media (max-width: 576px) {
@@ -953,5 +960,53 @@
 
 	.contacts-page__map {
 		height: 260px;
+	}
+
+	.delivery-page__heading {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	.delivery-page__intro {
+		font-size: 16px;
+	}
+
+	.delivery-page__descr {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.delivery-page__card--tall {
+		min-height: 0;
+	}
+
+	.delivery-page__tk {
+		padding: 16px;
+		margin-bottom: 20px;
+	}
+
+	.delivery-page__tk-item {
+		min-height: 100px;
+		padding: 16px;
+	}
+
+	.delivery-page__tk-row .delivery-page__tk-col:nth-last-child(-n+2) {
+		margin-bottom: 0;
+	}
+
+	.delivery-page__col {
+		margin-bottom: 20px;
+	}
+
+	.delivery-page__section--payment .delivery-page__row:last-child .delivery-page__col {
+		margin-bottom: 20px;
+	}
+
+	.delivery-page__section--payment .delivery-page__row:last-child .delivery-page__col:last-child {
+		margin-bottom: 0;
+	}
+
+	.delivery-page__cards-row .delivery-page__col:last-child {
+		margin-bottom: 0;
 	}
 }
